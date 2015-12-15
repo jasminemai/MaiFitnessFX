@@ -7,20 +7,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
    <children>
-      <ImageView fitHeight="454.0" fitWidth="621.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@menu.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="exitButton" layoutX="423.0" layoutY="305.0" mnemonicParsing="false" onAction="#exitButtonAction" opacity="0.0" prefHeight="61.0" prefWidth="105.0" text="Exit">
+      <Button fx:id="exitButton" layoutX="568.0" layoutY="408.0" mnemonicParsing="false" onAction="#exitButtonAction" opacity="0.0" prefHeight="61.0" prefWidth="105.0" text="Exit">
          <font>
             <Font name="Helvetica Neue Thin" size="14.0" />
          </font>
       </Button>
-      <TextArea fx:id="textArea" layoutX="133.0" layoutY="194.0" prefHeight="80.0" prefWidth="348.0" />
-      <Button fx:id="createUserButton" layoutX="43.0" layoutY="287.0" mnemonicParsing="false" onAction="#userButtonAction" opacity="0.0" prefHeight="88.0" prefWidth="143.0" />
-      <Button fx:id="logInButton" layoutX="228.0" layoutY="305.0" mnemonicParsing="false" onAction="#logInButtonAction" opacity="0.0" prefHeight="61.0" prefWidth="143.0" />
+      <TextArea fx:id="textArea" blendMode="DARKEN" layoutX="-1.0" layoutY="515.0" prefHeight="77.0" prefWidth="800.0">
+         <font>
+            <Font name="Helvetica Neue" size="24.0" />
+         </font></TextArea>
+      <Button fx:id="createUserButton" layoutX="61.0" layoutY="383.0" mnemonicParsing="false" onAction="#userButtonAction" opacity="0.0" prefHeight="112.0" prefWidth="205.0" />
+      <Button fx:id="logInButton" layoutX="305.0" layoutY="405.0" mnemonicParsing="false" onAction="#logInButtonAction" opacity="0.0" prefHeight="77.0" prefWidth="188.0" />
    </children>
 </AnchorPane>

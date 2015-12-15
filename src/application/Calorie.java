@@ -1,4 +1,6 @@
 package application;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Calorie {
@@ -76,6 +78,16 @@ public class Calorie {
 				//returnMenu = true;
 
 			} else if (userNum == 3){
+				int total = totalCalorie - totalLoss;
+				System.out.println(total);
+				try {
+					PrintWriter printer = new PrintWriter("Calorie.txt");
+					printer.write(String.valueOf(total));
+					printer.close();
+				}
+				catch(FileNotFoundException e) {
+					System.err.println("File not found. Please scan in new file.");
+				}
 				returnMenu = true;
 			}
 		} 

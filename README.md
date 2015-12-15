@@ -1,5 +1,5 @@
 # MaiFitnessFX
-JavaFX Fitness Application that monitors user's weight and calorie intake. As well as a daily workout routine that are categorized by difficulty level.
+JavaFX Fitness Application that monitors user's weight and calorie intake. As well as a daily workout routine that are categorized by difficulty level. Start by simply compile from Main.java
 
 #Features:
 Workouts & tips to keep up motivation! 
